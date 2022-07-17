@@ -1,5 +1,0 @@
-build:
-  docker:
-    php: web/Dockerfile
-    db: db/Dockerfile
-    adminer: adminer/Dockerfile
