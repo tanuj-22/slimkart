@@ -1,3 +1,5 @@
 build:
   docker:
-    web: Dockerfile
+    php: php/Dockerfile
+    db: mysql/Dockerfile
+    adminer: adminer/Dockerfile
