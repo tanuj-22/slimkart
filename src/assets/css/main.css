@@ -1,5 +1,8 @@
 
 /* Fonts */
+
+@import url(../css/satoshi.css);
+
 :root {
   /* --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -7,9 +10,12 @@
   --font-primary: "Amatic SC", sans-serif;
   --font-secondary: "Inter", sans-serif; */
 
-  --font-default : 'DM Sans', sans-serif;
+  /* --font-default : 'DM Sans', sans-serif;
   --font-primary : 'DM Sans', sans-serif;
-  --font-secondary : 'DM Sans', sans-serif;
+  --font-secondary : 'DM Sans', sans-serif; */
+  --font-default : 'Satoshi', sans-serif;
+  --font-primary : 'Satoshi', sans-serif;
+  --font-secondary : 'Satoshi', sans-serif;
 }
 
 /* Colors */
@@ -24,7 +30,7 @@
   scroll-behavior: smooth;
 }
 .container {
-  width: 80%;
+  width: 90%;
 }
 @media screen and (max-width: 576px) {
   .container {
@@ -67,7 +73,7 @@ section {
 }
 
 .section-bg {
-  background-color: #eee;
+  background-color: #eed6;
 }
 
 .section-header {
@@ -271,7 +277,8 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
 }
 
 .header.sticked {
@@ -298,10 +305,11 @@ section {
 
 .header .btn-book-a-table,
 .header .btn-book-a-table:focus {
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-weight: 500;
   color: #fff;
   background: var(--color-primary);
-  padding: 8px 20px;
+  padding: 8px 24px;
   margin-left: 30px;
   border-radius: 5px;
   transition: 0.3s;
@@ -600,8 +608,13 @@ section {
 }
 
 .what-get h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2.75rem;
+  font-weight: 1000;
+  margin-bottom: 3.5rem;
+  text-align: center;
+  letter-spacing: -1px;
+
+  
 }
 
 .what-get .content ul {
@@ -617,11 +630,11 @@ section {
 }
 .what-get .content ul p {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .what-get .btn-container {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -637,6 +650,7 @@ section {
   transition: 0.3s;
   text-align: center;
   border: none;
+  margin-top: 0;
 }
 
 .what-get .btn-book-a-table:hover,
@@ -671,6 +685,69 @@ section {
     font-size: 1rem;
   }
 }
+
+/* # New About Page Section */
+
+.aboutNew h1{
+    font-size: 2.75rem;
+    font-weight: 1000;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 3.5rem;
+
+  }
+
+  .newAboutImg{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    
+  }
+  .aboutNew h2{
+      display: block;
+      position: relative;
+      margin-bottom: 19px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      white-space: nowrap;
+  }
+  .aboutNew h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 3px;
+    width: 27px;
+    background-color: #82a918;
+    border-radius: 3px;
+  }
+  @media screen and (max-width: 576px){
+    .aboutNew p{
+      max-width: 100% !important; 
+      text-align: left !important;
+    }
+
+
+  }
+  .aboutNew p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #212529;
+    text-align: left;
+    max-width: 72%;
+    /* padding-right: 30%; */
+    padding-bottom: 5%;
+  }
+  
+.aboutNew .cardSection{
+  margin-left: 3%;
+}
+
+
 /*--------------------------------------------------------------
 # About Page Section
 --------------------------------------------------------------*/
@@ -872,10 +949,11 @@ section {
 
 .why-us h2 {
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #82a919;
-  margin-bottom: 20px;
+  font-size: 2.75rem;
+  font-weight: 1000;
+  color: #000000;
+  margin-bottom: 3.5rem;
+  letter-spacing: -1px;
 }
 .why-us .why-box {
   padding: 30px;
@@ -940,7 +1018,7 @@ section {
 
 .why-us .icon-box h4 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 30px 0;
   font-family: var(--font-secondary);
 }
@@ -980,10 +1058,12 @@ section {
 }
 .chefs h2 {
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #82a919;
-  margin-bottom: 20px;
+  font-size: 2.75rem;
+  font-weight: 1000;
+  color:#000;
+  /* color: #82a919; */
+  margin-bottom: 3.5rem;
+  letter-spacing: -1px;
 }
 .chefs .chef-member .member-img {
   position: relative;
@@ -1065,17 +1145,18 @@ section {
   color: #4f4f5a;
   font-weight: 400;
   margin-bottom: 30px;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 992px) {
   .hero img{
-    transform: scale(1.2) !important;
+    transform: scale(1.1) !important;
   }
   
 }
 .hero .btn-book-a-table {
   font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
+  /* font-size: 14px; */
+  /* letter-spacing: 1px; */
   display: inline-block;
   padding: 12px 36px;
   border-radius: 5px;
@@ -1272,4 +1353,111 @@ section {
     position: relative;
     width: 100%;
   }
+}
+
+
+
+.toast{
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px 35px 20px 25px;
+  border-left: 4px solid #82a918;
+  border-top: 4px solid #82a918;
+  border-right: 4px solid #82a918;
+  overflow: hidden;
+  /* transform: translateX(calc(100% + 30px)); */
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.35) ease-in-out;
+}
+@media screen and (max-width: 576px) {
+  .toast{
+    width: 86% !important;
+  }
+}
+  
+}
+.toast.active{
+  transform: translateX(0%);
+}
+
+.toast .toast-content{
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color: #82a918;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.toast-content .message{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text{
+  font-size: 20px;
+  font-weight: 400;;
+  color: #666666;
+}
+
+.message .text.text-1{
+  font-weight: 600;
+  color: #333;
+}
+
+.toast .close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover{
+  opacity: 1;
+}
+
+.toast .progress{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #ddd;
+}
+
+.toast .progress:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #82a918;
+}
+
+.progress.active:before{
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100%{
+      right: 100%;
+  }
+}
+
+.toast.active ~ button{
+  pointer-events: none;
 }

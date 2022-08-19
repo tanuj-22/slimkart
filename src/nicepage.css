@@ -30723,7 +30723,7 @@ li.active > a.u-button-style.u-button-style.u-border-active-white {
 }
 .u-border-black,
 .u-separator-black:after {
-  border-color: #000000;
+  border-color: #0000000f;
   stroke: #000000;
 }
 .u-button-style.u-border-black {
