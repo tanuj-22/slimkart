@@ -44,29 +44,28 @@ if($isValidChecksum == "TRUE") {
         $mail=$info["email"];
         $date=$info["date"];
         }
-        
-        $from = 'From: pancholi.tanuj8@gmail.com'; 
+        $from = 'From: info@slimkart.com'; 
         $to = $mail; 
         $subject = "New Order Received | $orderid";
         $body = "Details:\n<br/>OrderId:$orderid\n<br/>Name:$name\n<br/>Address:$addr\n<br/>Date:$date";
         
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html\r\n";
-        $headers .= 'From: pancholi.tanuj8@gmail.com' . "\r\n" .
-        'Reply-To: pancholi.tanuj8@gmail.com' . "\r\n" .
+        $headers .= 'From: info@slimkart.com' . "\r\n" .
+        'Reply-To: info@slimkart.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
         
         mail($to, $subject, $body, $headers);
         //send mail to admin
-        $from = 'From: pancholi.tanuj8@gmail.com'; 
-        $to = 'pancholi.tanuj8@gmail.com'; 
+        $from = 'From: info@slimkart.com'; 
+        $to = 'info@slimkart.com'; 
         $subject = "New Order Received | $orderid";
         $body = "Details:\n<br/>OrderId:$orderid\n<br/>Name:$name\n<br/>Address:$addr\n<br/>Date:$date";
         
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html\r\n";
-        $headers .= 'From: pancholi.tanuj8@gmail.com' . "\r\n" .
-        'Reply-To: pancholi.tanuj8@gmail.com' . "\r\n" .
+        $headers .= 'From: info@slimkart.com' . "\r\n" .
+        'Reply-To: info@slimkart.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
         
         mail($to, $subject, $body, $headers);

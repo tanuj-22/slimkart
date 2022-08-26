@@ -18,5 +18,6 @@ function toastFuncEnd() {
   
   $(document).ready(function(){
     $('.toast').toast('hide');
+    x = false;
   });
 }
